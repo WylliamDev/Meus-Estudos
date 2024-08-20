@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'east';
+            src: url('Eastwood.otf') format(opentype), url('Eastwood.ttf') format(truetype);
+            font-weight: normal;
+            font-style: normal;
+
+            
+
+            /*
+                Tipos de format()
+                - opentype(otf)
+                - truetype(ttf)
+                - embetdded-opentype
+                -truetype-aat (Aplle Advenced Typhography)
+                -svg
+            */
+        }
+        body {
+            font-family: 'east', Arial, Helvetica, sans-serif;
+        }
+        
+        h1 {
+            font-family: 'east', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>-faroeste-</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur aut corrupti adipisci, consequatur aliquid molestias, excepturi veniam repudiandae reprehenderit, odit doloribus autem sed vero iste rerum aliquam nulla dolor.</p>
+</body>
+</html>

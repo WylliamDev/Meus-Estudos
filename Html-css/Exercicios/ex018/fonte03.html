@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+        
+        @font-face {
+            font-family: 'london';
+            src: url('Olondon_.otf') format(opentype), url('OldLondon.ttf') format(truetype);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'east';
+            src: url('Eastwood.otf') format(opentype), url('Eastwood.ttf') format(truetype);
+            font-weight: normal;
+            font-style: normal;
+
+             /* Por algum motivo o Old London não funciona com a eastwood. então tem que escolher umas delas.*/
+
+             /* Resposta do erro que estava acontecendo:
+
+             <--problema é que você está tentando definir múltiplas fontes dentro de um único bloco @font-face, o que não é correto. Cada fonte personalizada precisa ter seu próprio bloco @font-face.-->
+            
+        
+            passo a passo pra não errar denovo:
+
+             1. Separação dos Blocos @font-face: Cada fonte personalizada (no seu caso, 'london' e 'east') deve ser definida em um bloco @font-face separado. Não se deve tentar incluir várias fontes dentro do mesmo bloco @font-face.
+
+            2. Formato das Fontes: No @font-face, o formato das fontes deve estar entre aspas, como format('opentype') e format('truetype').
+
+            3.Uso das Fontes: Após definir as fontes, você pode usá-las no restante do CSS para estilizar diferentes elementos da página.
+
+            --Assim, a fonte london será aplicada onde você especificar 'london', e a fonte east será aplicada onde você especificar 'east'. O Google Font 'Kaushan Script' será importado e aplicado conforme definido no CSS.--
+            */
+        }
+        body {
+            font-family: 'east', Courier, monospace;
+        }
+
+        h1 {
+            font-family: 'Kaushan Script', sans-serif;
+            font-size: 3em
+
+        }
+
+        h2 {
+            font-family: 'london', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Título 3 - fonte OLd London</h1>
+    <p><strong>Achei muito mais eficiente importando a fonte do site do que usando ela baixada e usando o seletor @font-face.</strong></p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni beatae, sunt quas error commodi ullam perspiciatis? Obcaecati quisquam hic, modi rerum blanditiis corporis dignissimos animi ut, voluptates earum minima velit!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, error. Quam, placeat id? Cupiditate necessitatibus ullam ratione ipsa ab? Tempora necessitatibus animi eum perspiciatis sapiente maxime dolorem ratione qui voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe placeat corrupti eveniet optio provident a non, laborum repudiandae rerum assumenda vel nulla eaque doloremque, recusandae incidunt porro at quisquam deserunt.</p>
+    <h2>Título 3 - Testando a Fonte Old London com a Eastwood</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quae totam dolorem provident quas quod maxime? Tenetur quis animi nisi quibusdam amet blanditiis veniam illo obcaecati dolore provident. Beatae, ut? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi eum voluptates quo! Accusamus debitis animi, tempore maiores dolor doloremque cupiditate similique atque laborum maxime sint neque recusandae iure aut corporis?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius praesentium fuga sit obcaecati sunt laboriosam fugiat harum atque distinctio ipsum! Sed hic earum est voluptas aspernatur similique maiores. Commodi, asperiores?</p>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e Âncoras</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal no YouTube</a></p>
+    <P>Para usar links externos e abrir uma nova aba, basta usar a Tag <b>target="_blank" rel="external"</b> dentro da Tag <b>a href=</b>
+    </P>
+    <p>Target=<abbr title="Abre uma janela em branco">"_blank"</abbr> - Abre uma janela em branco</p>
+    <p>Rel=<abbr title="Vai pra fora do site">"external"</abbr> - Vai pra fora do site </p>
+    
+    <ul type="disc">
+        <li>
+            <mark style="background-color: cyan;">Target</mark>
+
+            <ul type="disc">
+                <li>
+                    Target="_blank"- Abre uma janela em branco
+                </li>
+
+                <li>Target="_self" - Abre a guia do link na mesma página
+
+                </li>
+            </ul>
+       
+        <li>
+            <mark style="background-color: cyan;">Rel</mark>
+        </li>
+            <ul type="disc">
+                <li>Rel="external"- Vai pra fora do site
+
+                <li>rel="_prev" -  Volta pra página anterior</li>
+                                
+                <li>rel="_next" -  Vai pra próxima página</li>
+
+                </li>
+            </ul>
+        </ol>
+    <h2>Links Internos</h2>
+    tambem pode acessar <a href="pg002/pg002.html" target="_blank" rel="next">a pg002</a>
+    <p>Ou pode acessar <a href="pg003.html" target="_self" rel="next">a pg003</a></p>
+
+    <h2>Links para download</h2>
+    <ul>
+        <li><a href="Livros/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="Livros/meulivro.zip" download="meulivro.zip" type="application/zip">LIvro compactado em ZIP</a></li>
+    </ul>
+    <p>Para colocar um link para download basta colocar a tag <b>a href= "local/arquivo" download="nome do aquivo"</b></p>
+
+    <p>Dependendo dos navegadores é necessário colocar o tipo <b>type=application/pdf</b></p>
+    <p>Site pra encrontar os outros <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" type="external">tipos de applications.</a></p>
+</body>
+</html>

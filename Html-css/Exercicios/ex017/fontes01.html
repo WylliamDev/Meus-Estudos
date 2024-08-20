@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in(Polegadas), px, pt(ponto), pc(Paica)
+
+            Medidas Relativas
+            Em(Relativo ao tamanho atual da fonte),
+            Ex(Relativo a fonte que está configurada no body)
+            Rem(Tipo o EM, mas é relativa ao root, a fonte que está configurada no body)
+            VW-ViewWhidth(Que quer dizer a Largura da ViewPort(ViewPort é o tamanho da tela))
+            VH-ViewHeight(É a atula do ViewPort)
+            %(Porcentagem)
+
+            As medidas pra serem usadas mais recomendadas são a px e em.
+            16px geralmente é igual a 1emMedidas Absolutas
+            cm, mm, in(Polegadas), px, pt(ponto), pc(Paica)
+
+            Medidas Relativas
+            Em(Relativo ao tamanho atual da fonte),
+            Ex(Relativo a fonte que está configurada no body)
+            Rem(Tipo o EM, mas é relativa ao root, a fonte que está configurada no body)
+            VW-ViewWhidth(Que quer dizer a Largura da ViewPort(ViewPort é o tamanho da tela))
+            VH-ViewHeight(É a atula do ViewPort)
+            %(Porcentagem)
+
+            As medidas pra serem usadas mais recomendadas são a px e em.
+            16px geralmente é igual a 1em
+            */
+            font-size: 1em;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando em CSS</h1>
+   <h2>Medidas Absolutas</h2>
+        <p>cm, mm, in(Polegadas), px, pt(ponto), pc(Paica)</p>
+        <h2>Medidas Relativas</h2>
+        <p>Em (Relativo ao tamanho atual da fonte),</p>
+        <p>Ex (Relativo a fonte que está configurada no body)</p>
+        <p>Rem (Tipo o EM, mas é relativa ao root, a fonte que está configurada no body)</p>
+        <p>VW-ViewWhidth (Que quer dizer a Largura da ViewPort (ViewPort é o tamanho da tela))</p>
+        <p>
+        VH-ViewHeight (É a atula do ViewPort)
+        </p>
+        <p>% (Porcentagem)</p>
+        As medidas pra serem usadas mais recomendadas são a px e em.
+        16px geralmente é igual a 1em
+    <h2>Peso da Fonte</h2>
+    <p>font-Weight: Peso da Fonte</p>
+    <p>Font-Width: Largura da Fonte</p>
+    <p>Font-Height: Altura da Fonte</p>
+    <p>Não se confunda!</p>
+
+    <h2>Uso do Font-Weight</h2>
+    <p>Existem alguns tipos de pesos que no caso é; lighter, normal, bold, bolder.</p>
+    <p>OBS: Nem toda fonte tem todas as variações.</p>
+    
+    <h2>Uso do Font-Style</h2>
+    <p>No Font-Style tem duas variações que são o;Normal, Itálico.</p>
+
+    <h2>Uso do Text-Decoration</h2>
+    <p>O text-Decoration: Underline é o <u>Sublinhado</u></p>
+
+    <h2>Uso do Shorthand</h2>
+    <p>Para fazer a ShortHand pra font você precisa colocar em certa ordem, que é:</p>
+    <p><b>- Font-Style -> Font-Weight -> Font-Size -> Font-Family</b></p>
+    <p>Por exemplo pra resumir esse código</p>
+    <b>
+        font-family: 'Work Sans' , sans-serif; <br>
+        font-weight: bolder; <br>
+        font-size: 3em <br>
+        font-style: italic;
+    </b>
+
+    <p>Basta colocar na seguite ordem:</p>
+
+    <p><b>font: italic bolder 3em 'Work Sans';</b></p>
+</html>

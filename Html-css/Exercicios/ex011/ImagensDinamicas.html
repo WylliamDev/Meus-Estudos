@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos deferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem-flexível">
+    </picture>
+    <h1>Reproduzindo Áudo</h1>
+    <p>Vamos repoduzir áudio em HTML5</p>
+    <audio src="midia/echappe-danbodan.mp3"controls autoplay></audio>
+    <!-- MP3 WAV E OGG-->
+     <br>
+     <audio preload="metadata" autoplay controls>
+        <source src="midia/zombie-rock-audionautix.mp3" type="audio/mpeg">
+        <source src="midia/zombie-rock-audionautix.ogg" type="audio/ogg">
+        <source src="midia/zombie-rock-audionautix.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue baixar audio. <a href="midia/zombie-rock-audionautix.mp3">Clique aqui pra baixar o arquivo mp3.</a></p>
+     </audio>
+</body>
+</html>
